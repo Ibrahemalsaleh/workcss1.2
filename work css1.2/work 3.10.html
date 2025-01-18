@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Academy</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .header {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .logo img{
+            max-width: 150px;
+            height: auto;
+        }
+
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-style: italic;
+        }
+
+        /* Styles for Cat Photo App */
+        #cat-photo-app {
+            border: 1px solid black;
+            padding: 20px;
+        }
+        #cat-photo-app h2 {
+            text-align: center;
+        }
+        #cat-photo-app img {
+            max-width: 200px;
+            display: block;
+            margin: 10px auto;
+        }
+        #cat-photo-app a {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #cat-photo-app ul, #cat-photo-app ol {
+            padding-left: 20px;
+        }
+        #cat-photo-app label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #cat-photo-app input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 5px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        #cat-photo-app input[type="submit"] {
+            padding: 5px 10px;
+        }
+
+        /* Styles for ABC Inc. Budget Summary */
+        #abc-budget {
+            border: 1px solid black;
+            padding: 20px;
+            background-color: #FFFFE0;
+        }
+        #abc-budget h2 {
+            text-align: center;
+        }
+        #abc-budget p {
+            margin-bottom: 10px; /* Add spacing between paragraphs */
+        }
+        #abc-budget .highlight {
+            background-color: red;
+            color: white;
+            padding: 2px 5px;
+        }
+        #abc-budget .highlight-green {
+            background-color: green;
+            color: white;
+            padding: 2px 5px;
+        }
+
+        .orange-restricted {
+            text-align: center;
+            font-size: smaller;
+            color: gray;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="orange_logo.png" alt="Orange Logo">
+        </div>
+        <div class="title">أكاديمية البرمجة <br> Coding Academy</div>
+        <div class="subtitle">powered by Simplon</div>
+    </div>
+
+    <div id="cat-photo-app">
+        <h2>Cat Photo App</h2>
+        <img src="cat_image.jpg" alt="Cute Cat"> <a href="#">Click here to view more cat photos.</a>
+
+        <h3>Things cats love:</h3>
+        <ul>
+            <li>Cat nip</li>
+            <li>Laser pointers</li>
+            <li>Lasagna</li>
+        </ul>
+
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+            <li>Flea treatment</li>
+            <li>Thunder</li>
+            <li>Other cats</li>
+        </ol>
+
+        <label for="cat-photo-url">Cat photo URL</label>
+        <input type="text" id="cat-photo-url" name="cat-photo-url">
+        <input type="submit" value="Submit">
+    </div>
+
+    <div id="abc-budget">
+        <h2>ABC, Inc. Year End Budget Summary</h2>
+        <p>ABC, Inc. offers:</p>
+        <ul>
+            <li>Wonderful people!</li>
+            <li>Great atmosphere!</li>
+        </ul>
+        <p>This is the budget summary for ABC, Inc. In the year <span class="highlight">2005</span>, we had an income of <span class="highlight">$674,955</span>. We had expenses of $50,123. This allowed us to have a net income of <span class="highlight-green">$624,832</span></p>
+        <p>In <span class="highlight">2000</span>, we had an income of <span class="highlight">$300,000</span> and expenses of <span class="highlight">$250,000</span> for a total net income of <span class="highlight-green">$50,000</span></p>
+        <p>In <span class="highlight">1995</span>, we had an income of <span class="highlight">$100,000</span></p>
+        <p>In <span class="highlight">1990</span> we had an income of <span class="highlight">$20,031</span></p>
+        <p>As you can see, we are constantly growing. As we move further into the 21st century, at ABC, Inc. we think the future is bright!</p>
+    </div>
+
+    <p>17. Selector (css diner):</p>
+    <a href="https://flukeout.github.io/">https://flukeout.github.io/</a>
+
+    <div class="orange-restricted">Orange Restricted</div>
+
+</body>
+</html>

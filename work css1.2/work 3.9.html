@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Academy</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .header {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .logo img{
+            max-width: 150px;
+            height: auto;
+        }
+
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-style: italic;
+        }
+
+        .background-container {
+            width: 100%;
+            min-height: 400px; /* Ensure there's enough space to see the repeating background */
+            border: 1px solid black;
+            display: flex; /* Use flexbox for layout */
+        }
+        .vertical-background{
+            width: 50%;
+            background-image: url("vertical_pattern.png"); /* Replace with your image URL */
+            background-repeat: repeat-y;
+            border-right: 1px solid black; /* Add a separator */
+        }
+        .horizontal-background{
+            width: 50%;
+            background-image: url("horizontal_pattern.png"); /* Replace with your image URL */
+            background-repeat: repeat-x;
+        }
+
+        .text-container {
+            padding: 20px; /* Add padding to the text container */
+        }
+
+        .orange-restricted {
+            text-align: center;
+            font-size: smaller;
+            color: gray;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="orange_logo.png" alt="Orange Logo">
+        </div>
+        <div class="title">أكاديمية البرمجة <br> Coding Academy</div>
+        <div class="subtitle">powered by Simplon</div>
+    </div>
+
+    <div class="background-container">
+        <div class="vertical-background">
+            <div class="text-container">Vertical background image</div>
+        </div>
+        <div class="horizontal-background">
+            <div class="text-container">Horizontal background image</div>
+        </div>
+    </div>
+
+    <div class="orange-restricted">Orange Restricted</div>
+
+</body>
+</html>

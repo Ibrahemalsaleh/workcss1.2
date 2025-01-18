@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Academy</title>
+    <style>
+        body {
+            font-family: sans-serif; /* Use a generic sans-serif font */
+            margin: 0; /* Remove default body margins */
+            padding: 20px; /* Add some padding around the content */
+        }
+
+        .header {
+            text-align: left; /* Align header text to the left */
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            display: inline-block; /* Allows setting width/height */
+            vertical-align: middle; /* Align logo with text */
+            margin-right: 10px; /* Add some spacing between logo and text */
+        }
+        .logo img{
+            max-width: 150px; /* Adjust as needed */
+            height: auto;
+        }
+
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-style: italic;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .paragraph {
+            padding: 15px;
+            border: 1px solid #ccc; /* Add a border for visual separation */
+            margin-bottom: 10px;
+        }
+        .paragraph img{
+            max-width: 100%;
+            display: block;
+        }
+
+        .paragraph:last-child {
+            background-image: url('image1.jpg'), url('image2.jpg'); /* Replace with your image URLs */
+            background-size: cover, cover;
+            background-position: center, center;
+            background-blend-mode: overlay; /* Optional: Blend the images */
+            color: white; /* Example: Change text color for better contrast */
+            border: none; /* remove borders */
+            padding: 20px; /* add padding */
+            text-shadow: 2px 2px 4px #000000; /* add text shadow */
+        }
+        .orange-restricted {
+            text-align: center;
+            font-size: smaller;
+            color: gray;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="orange_logo.png" alt="Orange Logo">
+        </div>
+        <div class="title">أكاديمية البرمجة <br> Coding Academy</div>
+        <div class="subtitle">powered by Simplon</div>
+    </div>
+
+    <div class="content">
+        <div class="paragraph">Intermediate</div>
+        <div class="paragraph">
+            8.insert image for paragraph background:
+            <img src="screenshot.png" alt="screenshot">
+        </div>
+        <div class="paragraph">last paragraph you should use two background</div>
+    </div>
+    <div class="orange-restricted">Orange Restricted</div>
+
+</body>
+</html>

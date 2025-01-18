@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Academy</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .header {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .logo img{
+            max-width: 150px;
+            height: auto;
+        }
+
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-style: italic;
+        }
+
+        form {
+            border: 5px solid black; /* Thick black border */
+            padding: 20px;
+            max-width: 500px; /* Set a maximum width for the form */
+            margin: 0 auto; /* Center the form */
+            background-color: #FAF9F6; /* light background color */
+        }
+
+        h2 {
+            background-color: #CD5C5C; /* Reddish heading background */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 0; /* remove top margin*/
+        }
+
+        label {
+            display: block; /* Make labels appear above inputs */
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 12px); /* Full width minus padding and border */
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+        textarea{
+            height: 100px; /* set height for the text area */
+        }
+
+        input[type="submit"] {
+            background-color: #FFD700; /* Gold submit button */
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            width: 100%; /* Full width submit button */
+        }
+        input[type="submit"]:hover{
+            background-color: #DAA520; /* Darker Gold on hover */
+        }
+
+        .orange-restricted {
+            text-align: center;
+            font-size: smaller;
+            color: gray;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="orange_logo.png" alt="Orange Logo">
+        </div>
+        <div class="title">أكاديمية البرمجة <br> Coding Academy</div>
+        <div class="subtitle">powered by Simplon</div>
+    </div>
+
+    <form action="#" method="post">
+        <h2>Contact Us!</h2>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject">
+
+        <label for="message">Message.......</label>
+        <textarea id="message" name="message"></textarea>
+
+        <input type="submit" value="SEND MESSAGE">
+    </form>
+
+    <div class="orange-restricted">Orange Restricted</div>
+
+</body>
+</html>

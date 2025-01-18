@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Examples</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        /* Exercise 3 Styles */
+        h1 {
+            color: black;
+        }
+
+        .blue-text {
+            color: blue;
+        }
+
+        h3 {
+            color: black;
+        }
+        a{
+          color: blue;
+        }
+        .video-container{
+          width: 560px;
+          height: 315px;
+          margin: 20px auto;
+        }
+
+        /* Exercise 4 Styles */
+        .multiple-backgrounds {
+            background-color: lightblue;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Neckertal_in_Winterthur.jpg/1280px-Neckertal_in_Winterthur.jpg"); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .multiple-backgrounds p{
+          background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for text */
+          padding: 10px;
+        }
+
+        /* Exercise 5 Styles */
+        .vertical-repeat {
+            background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png"); /* Replace with your image URL */
+            background-repeat: repeat-y;
+            min-height: 300px; /* Ensure the background repeats vertically */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>This is the main heading "h1" tags.</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada vehicula dictum. Integer tristique sapien nec lectus lobortis placerat. <span class="blue-text">MAKE THIS TEXT BLUE.</span> Vestibulum molestie semper facilisis. Vestibulum finibus sit amet metus eget elementum. Morbi sed non orci. <span class="blue-text">MAKE THIS TEXT BLUE</span> Nullam lacinia interdum felis sit amet aliquet.</p>
+
+    <h3>This is the subheadline that is wrapped in "h3" tags.</h3>
+    <a href="https://www.google.com">I'm a link to google</a>
+
+    <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yfoY53QXEnI?si=j62_H29Yk82u67x0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <h2>Multiple Backgrounds</h2>
+    <div class="multiple-backgrounds">
+        <p>Lorem Ipsum Dolor</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <h2>Add background image vertical (repeat-y):</h2>
+    <div class="vertical-repeat">
+        <p>This div has a vertically repeating background image.</p>
+        <p>Content to make the div taller so you can see the repeat.</p>
+        <p>More content...</p>
+    </div>
+
+</body>
+</html>
